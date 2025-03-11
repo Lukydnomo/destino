@@ -22,12 +22,17 @@
         }
         .pixel-clicavel {
             position: absolute;
-            width: 30px; /* Tamanho do pixel clicável */
-            height: 10px;
-            top: 60%; /* Ajuste para a posição desejada */
-            left: 45%; /* Ajuste para a posição desejada */
-            background-color: transparent;
+            width: 40px; /* Tamanho do pixel clicável */
+            height: 130px;
+            top: 49%; /* Ajuste para a posição desejada */
+            left: 45.5%; /* Ajuste para a posição desejada */
+            background-color: white; /* Cor inicial do botão */
             cursor: pointer;
+            mix-blend-mode: difference; /* Inversão de cores */
+        }
+        .pixel-clicavel:hover {
+            mix-blend-mode: normal;
+            background-color: transparent;
         }
     </style>
     <script src='script.js'></script>
