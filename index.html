@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -15,26 +15,33 @@
             background-color: black;
         }
         .container {
-            top: 5%;
             position: relative;
             text-align: center;
+            width: 100%;
+            padding: 0 10px; /* Adiciona um pouco de espaço nas laterais em telas pequenas */
         }
         .imagem-enigma {
-            height: 500px;
+            width: 80vw; /* A largura da imagem será 80% da largura da tela */
+            height: auto; /* Manter a proporção da imagem */
         }
         .pixel-clicavel {
             position: absolute;
-            width: 30px; /* Tamanho do pixel clicável */
-            height: 100px;
-            top: 44.5%; /* Ajuste para a posição desejada */
-            left: 46%; /* Ajuste para a posição desejada */
-            background-color: white; /* Cor inicial do botão */
+            width: 6vw; /* Ajusta o tamanho em relação à largura da tela */
+            height: 15vh; /* Ajusta o tamanho em relação à altura da tela */
+            top: 44.5%;
+            left: 46%;
+            background-color: white;
             cursor: pointer;
-            mix-blend-mode: difference; /* Inversão de cores */
+            mix-blend-mode: difference;
         }
         .pixel-clicavel:hover {
             mix-blend-mode: normal;
             background-color: transparent;
+        }
+        p {
+            color: white;
+            font-size: 4vw; /* Tamanho do texto em relação à largura da tela */
+            margin-top: 10px;
         }
     </style>
     <script src='script.js'></script>
@@ -43,7 +50,7 @@
     <div class="container">
         <img src="https://iili.io/3qWRxXR.png" class="imagem-enigma" alt="Enigma">
         <div class="pixel-clicavel" onclick="abrirJanela()"></div>
-        <p style='color: white;'>talvez aquele velho pato da cicada te ajude...</p>
+        <p>talvez aquele velho pato da cicada te ajude...</p>
     </div>
 </body>
 </html>
