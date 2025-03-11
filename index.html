@@ -15,17 +15,19 @@
             background-color: black;
         }
         .container {
+            top: 5%;
             position: relative;
+            text-align: center;
         }
         .imagem-enigma {
-            height: 600px;
+            height: 500px;
         }
         .pixel-clicavel {
             position: absolute;
-            width: 40px; /* Tamanho do pixel clicável */
-            height: 130px;
-            top: 49%; /* Ajuste para a posição desejada */
-            left: 45.5%; /* Ajuste para a posição desejada */
+            width: 30px; /* Tamanho do pixel clicável */
+            height: 100px;
+            top: 44.5%; /* Ajuste para a posição desejada */
+            left: 46%; /* Ajuste para a posição desejada */
             background-color: white; /* Cor inicial do botão */
             cursor: pointer;
             mix-blend-mode: difference; /* Inversão de cores */
@@ -41,7 +43,7 @@
     <div class="container">
         <img src="https://iili.io/3qWRxXR.png" class="imagem-enigma" alt="Enigma">
         <div class="pixel-clicavel" onclick="abrirJanela()"></div>
+        <p style='color: white;'>talvez aquele velho pato da cicada te ajude...</p>
     </div>
-    <p>outguess</p>
 </body>
 </html>
