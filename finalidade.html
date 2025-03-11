@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -6,35 +6,26 @@
     <title>Finalidade</title>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="script.js" defer></script>
-    <style>
-        body {
-            background-color: black;
-            color: red;
-            font-family: "Courier New", monospace;
-            font-size: 5vw; /* Ajusta o tamanho do texto em função da largura da tela */
-            text-align: center;
-            margin-top: 20%;
-            padding: 0 5%; /* Adiciona margem para garantir que o texto não encoste nas bordas da tela */
-        }
-
-        .container {
-            display: inline-block;
-            border-right: 2px solid red;
-            padding-right: 5px;
-            white-space: nowrap;
-            overflow: hidden;
-            word-wrap: break-word; /* Garante que o texto que ultrapassar a largura será quebrado */
-            max-width: 100%; /* Impede que o contêiner ultrapasse a largura da tela */
-        }
-
-        /* Responsividade para telas menores */
-        @media (max-width: 600px) {
-            body {
-                font-size: 4vw; /* Aumenta um pouco o tamanho do texto em telas muito pequenas */
-            }
-        }
-    </style>
 </head>
+<style>
+    body {
+    background-color: black;
+    color: red;
+    font-family: "Courier New", monospace;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 20%;
+}
+
+.container {
+    display: inline-block;
+    border-right: 2px solid red; /* Simula o cursor piscando */
+    padding-right: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+</style>
 <body>
     <div class="container">
         <span id="texto"></span>
