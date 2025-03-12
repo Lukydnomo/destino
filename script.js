@@ -16,6 +16,7 @@ function abrirJanela() {
     if (resposta === "humanidade morta") {
         window.location.href = "finalidade.html"; // Substitua pela URL correta
     } else if (resposta === "eleestarala.html") {
+        window.location.href = "eleestarala.html";
     } else {
         alert("Errado.");
     }
