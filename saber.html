@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>O Eco das Almas - Livro Interativo</title>
+    <style>
+      body {
+        background-color: black;
+      }
+      /* Container geral do livro com perspectiva */
+      .book-container {
+        position: relative;
+        width: 90%;
+        max-width: 800px;
+        height: 80vh;
+        margin: 40px auto;
+        perspective: 1200px;
+      }
+
+      /* Área que abriga as páginas */
+      .book {
+        width: 100%;
+        height: 100%;
+        position: relative;
+      }
+
+      /* Estilo de cada página */
+      .page {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: #acacac;
+        color: #333;
+        padding: 20px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        backface-visibility: hidden;
+        transform-style: preserve-3d;
+        transition: transform 0.8s ease;
+        overflow-y: auto;
+        /* Só a primeira página ficará visível inicialmente */
+        display: none;
+      }
+
+      /* Página ativa */
+      .page.active {
+        display: block;
+        transform: rotateY(0deg);
+      }
+
+      /* Títulos e parágrafos para uma boa leitura */
+      h1,
+      h2 {
+        text-align: center;
+        margin-top: 0;
+      }
+      p {
+        text-align: justify;
+        line-height: 1.6;
+        margin-bottom: 1em;
+      }
+
+      /* Navegação abaixo do livro */
+      .navigation {
+        text-align: center;
+        margin-top: 20px;
+      }
+      .navigation button {
+        background: #333;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        margin: 0 10px;
+        font-size: 1em;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+      .navigation button:disabled {
+        background: #777;
+        cursor: not-allowed;
+      }
+      .navigation button:hover:not(:disabled) {
+        background: #555;
+      }
+
+      /* Ajustes responsivos */
+      @media (max-width: 600px) {
+        .book-container {
+          height: 70vh;
+        }
+        .navigation button {
+          padding: 8px 16px;
+          font-size: 0.9em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="book-container">
+      <div class="book">
+        <!-- Página 1: Capa -->
+        <div class="page active" data-page="1">
+          <h1>O Eco das Almas</h1>
+          <p style="text-align: center; font-style: italic">
+            Clique em "Próxima" para iniciar a leitura
+          </p>
+          <p style="text-align: center; font-style: italic">
+            5:177, 1:6, 1:13, 7:176, 1:8, 1:3, 3:18, 1:22, 1:11, 1:17, 1:18,
+            1:15, 1:24, 1:4, 1:23, 3:45, 1:19, 3:19, 3:52, 5:22, 3:3, 1:14,
+            5:45, 3:5, 3:2, 5:51, 3:37, 3:9, 3:6, 5:58, 3:55, 31:104, 3:35,
+            5:70, 3:12, 3:47, 3:8, 3:14, 5:84, 5:6, 3:29, 3:22, 3:17, 5:24,
+            5:240, 3:21, 3:36, 5:71, 3:26, 3:54, 3:33, 5:31, 3:28, 1:16, 5:3,
+            5:244, 5:27, 3:56, 5:92, 3:24, 3:25, 3:31, 5:43, 5:12, 5:55, 5:64,
+            5:57, 3:38, 5:63, 5:266, 3:41, 5:19
+          </p>
+        </div>
+
+        <!-- Página 2: Capítulo 1 -->
+        <div class="page" data-page="2">
+          <h2>Capítulo 1: O Inferno não é um Lugar, é um Estado de Ser</h2>
+          <p>
+            O inferno, como muitos acreditam, não é uma simples chamas e
+            labaredas. Não é apenas um abismo de fogo onde as almas são
+            torturadas fisicamente por demônios impiedosos. Não. O verdadeiro
+            inferno está em outro lugar, onde as chamas não são visíveis, mas
+            ainda assim queimam ferozmente. O verdadeiro inferno reside dentro
+            de cada alma que lá se encontra, se remoendo em seu próprio destino,
+            preso em um ciclo interminável de arrependimento, dúvida e desejo
+            não realizado.
+          </p>
+          <p>
+            As almas, uma vez que abandonam o corpo físico, não são
+            imediatamente julgadas e enviadas para seu destino eterno. Elas
+            flutuam, desorientadas, perdidas entre os véus da existência.
+            Algumas se afundam mais fundo, outras ficam à deriva, vagando em um
+            limbo onde o tempo não existe. Mas todos, sem exceção, carregam com
+            eles o peso de suas escolhas, suas ações e suas falhas.
+          </p>
+        </div>
+
+        <!-- Página 3: Capítulo 2 -->
+        <div class="page" data-page="3">
+          <h2>Capítulo 2: Os Ecos do Destino</h2>
+          <p>
+            As almas que chegam a esse lugar não são apenas vítimas de uma
+            justiça divina, mas também de um destino que elas mesmas ajudaram a
+            criar. O inferno, então, não é um castigo imposto por uma força
+            externa, mas uma manifestação do caos interior de cada alma. Elas
+            olham para seus próprios atos, suas omissões, e veem claramente o
+            que fizeram de errado, mas, de alguma forma, sentem que não podem
+            mais mudar nada.
+          </p>
+          <p>
+            As almas que já enfrentaram a punição física, que passaram por
+            torturas e sofrimentos, acabam chegando a um momento de reflexão.
+            Mas a reflexão, ao contrário do que poderia parecer, não é
+            libertadora. Ela se transforma em uma prisão mental. Cada lembrança,
+            cada fragmento de escolha que levou ao seu estado atual, se torna um
+            espelho que reflete suas falhas e a verdade dolorosa de sua
+            impotência.
+          </p>
+          <p>
+            É como se o destino fosse uma linha invisível que elas não podiam
+            ver até o momento de sua chegada ao inferno. Agora, elas são
+            forçadas a observar essa linha, esticada diante delas, uma linha que
+            se ramifica em várias direções, todas levando a um final inevitável.
+            E nesse espaço, entre o que poderia ter sido e o que não foi, as
+            almas se perdem em ciclos de remorso e dúvida.
+          </p>
+        </div>
+
+        <!-- Página 4: Capítulo 3 -->
+        <div class="page" data-page="4">
+          <h2>Capítulo 3: O Tormento do Nunca</h2>
+          <p>
+            O maior tormento do inferno não está no calor ou na dor física. O
+            maior tormento é a sensação de que tudo o que se fez foi em vão, que
+            o destino estava predeterminado e não havia escolha real. As almas
+            se perguntam: “E se eu tivesse feito algo diferente? E se eu tivesse
+            tomado o outro caminho? E se eu tivesse dito aquelas palavras em vez
+            de me calar?”
+          </p>
+          <p>
+            Essas perguntas ecoam pelas paredes de sua existência, e a resposta
+            nunca chega. Porque o que as almas não sabem é que, em algum ponto
+            de sua vida, elas já haviam tomado a decisão final. E o resto, as
+            consequências e os momentos seguintes, eram apenas ecos de escolhas
+            passadas. Mas essas almas, incapazes de compreender sua situação, se
+            afundam na negação. Elas se recusam a aceitar que o caminho já
+            estava traçado, e que cada ato de suas vidas foi uma manifestação do
+            que havia de vir.
+          </p>
+          <p>
+            Agora, no inferno, elas são forçadas a viver em um ciclo eterno de
+            "e se?". Se pudessem voltar, fariam tudo diferente. Mas o que elas
+            não entendem é que não se trata do que fizeram, mas do que elas se
+            tornaram. A verdadeira punição não é o que acontece com elas, mas o
+            que elas continuam a carregar dentro de si. O tormento do nunca, do
+            que poderia ter sido, é o que as corrói eternamente.
+          </p>
+        </div>
+
+        <!-- Página 5: Capítulo 4 -->
+        <div class="page" data-page="5">
+          <h2>Capítulo 4: O Último Suspiro de Esperança</h2>
+          <p>
+            Mesmo no inferno, onde a dor e o arrependimento são infinitos, há um
+            vislumbre de algo mais. Não é salvação, não é perdão, mas sim uma
+            fração de esperança. O inferno está repleto de almas que, por mais
+            que se sintam condenadas, ainda lutam, ainda buscam um propósito.
+            Elas não sabem que a verdadeira prisão do inferno é a crença de que
+            já não há mais chance de redenção.
+          </p>
+          <p>
+            Mas o que elas não percebem é que o verdadeiro tormento não é o
+            sofrimento físico, mas a perda do livre-arbítrio. No fundo, o
+            inferno é uma tortura psicológica, um espaço onde o tempo se estica
+            e se distorce, onde os fantasmas das escolhas passadas continuam a
+            atormentar. Cada alma lá dentro se pergunta, em silêncio: "O que eu
+            poderia ter feito para escapar?"
+          </p>
+          <p>
+            As almas se remoem, se retorcem, tentando entender onde erraram. E
+            em algum ponto de sua tormenta, elas chegam a uma realização
+            dolorosa: a verdadeira dor não vem do destino, mas da incapacidade
+            de aceitar o que não pode mais ser mudado.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controles de navegação -->
+    <div class="navigation">
+      <button id="prev" disabled>Anterior</button>
+      <button id="next">Próxima</button>
+    </div>
+
+    <script>
+      const pages = document.querySelectorAll(".page");
+      let currentPage = 0;
+      const transitionDuration = 800; // duração em milissegundos
+
+      const prevBtn = document.getElementById("prev");
+      const nextBtn = document.getElementById("next");
+
+      prevBtn.addEventListener("click", () => {
+        if (currentPage > 0) flipPage(currentPage, currentPage - 1, "prev");
+      });
+
+      nextBtn.addEventListener("click", () => {
+        if (currentPage < pages.length - 1)
+          flipPage(currentPage, currentPage + 1, "next");
+      });
+
+      function flipPage(fromIndex, toIndex, direction) {
+        const current = pages[fromIndex];
+        const next = pages[toIndex];
+
+        // Garanta que a próxima página esteja visível e posicione-a fora de vista para a animação
+        next.style.display = "block";
+        if (direction === "next") {
+          next.style.transform = "rotateY(180deg)";
+        } else {
+          next.style.transform = "rotateY(-180deg)";
+        }
+
+        // Forçar reflow para que o navegador reconheça o estado inicial
+        void next.offsetWidth;
+
+        // Inicia a animação de virar a página
+        if (direction === "next") {
+          current.style.transform = "rotateY(-180deg)";
+        } else {
+          current.style.transform = "rotateY(180deg)";
+        }
+        next.style.transform = "rotateY(0deg)";
+
+        // Após a animação, atualize o estado das páginas
+        setTimeout(() => {
+          current.style.display = "none";
+          current.style.transform = "rotateY(0deg)"; // reseta a rotação para futuras animações
+          current.classList.remove("active");
+          next.classList.add("active");
+          currentPage = toIndex;
+          updateButtons();
+        }, transitionDuration);
+      }
+
+      function updateButtons() {
+        prevBtn.disabled = currentPage === 0;
+        nextBtn.disabled = currentPage === pages.length - 1;
+      }
+    </script>
+  </body>
+</html>

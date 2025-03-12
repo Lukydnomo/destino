@@ -21,3 +21,17 @@ function abrirJanela() {
         alert("Errado.");
     }
 }
+
+let currentPage = 1;
+
+document.querySelectorAll('.next-page').forEach(button => {
+    button.addEventListener('click', function() {
+        if (currentPage < 4) {
+            document.querySelector(`.page-${currentPage}`).style.opacity = 0;
+            document.querySelector(`.page-${currentPage}`).style.transform = 'rotateY(180deg)';
+            currentPage++;
+            document.querySelector(`.page-${currentPage}`).style.opacity = 1;
+            document.querySelector(`.page-${currentPage}`).style.transform = 'rotateY(0deg)';
+        }
+    });
+});
