@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function abrirJanela() {
     let resposta = prompt("").toLowerCase();
-    if (resposta === "vida") {
+    if (resposta === "humanidade morta") {
         window.location.href = "finalidade.html"; // Substitua pela URL correta
     } else {
         alert("Errado.");
