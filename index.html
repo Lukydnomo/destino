@@ -1,49 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Enigma do Destino</title>
     <style>
-        body {
-            margin: 0;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: black;
-        }
-        .container {
-            top: 5%;
-            position: relative;
-            text-align: center;
-        }
-        .imagem-enigma {
-            height: 500px;
-        }
-        .pixel-clicavel {
-            position: absolute;
-            width: 30px; /* Tamanho do pixel clicável */
-            height: 100px;
-            top: 44.5%; /* Ajuste para a posição desejada */
-            left: 46%; /* Ajuste para a posição desejada */
-            background-color: white; /* Cor inicial do botão */
-            cursor: pointer;
-            mix-blend-mode: difference; /* Inversão de cores */
-        }
-        .pixel-clicavel:hover {
-            mix-blend-mode: normal;
-            background-color: transparent;
-        }
+      body {
+        margin: 0;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: black;
+      }
+      .container {
+        top: 5%;
+        position: relative;
+        text-align: center;
+      }
+      .imagem-enigma {
+        height: 500px;
+      }
+      .pixel-clicavel {
+        position: absolute;
+        width: 30px; /* Tamanho do pixel clicável */
+        height: 100px;
+        top: 44.5%; /* Ajuste para a posição desejada */
+        left: 46%; /* Ajuste para a posição desejada */
+        background-color: white; /* Cor inicial do botão */
+        cursor: pointer;
+        mix-blend-mode: difference; /* Inversão de cores */
+      }
+      .pixel-clicavel:hover {
+        mix-blend-mode: normal;
+        background-color: transparent;
+      }
     </style>
-    <script src='script.js'></script>
-</head>
-<body>
+    <script src="script.js"></script>
+  </head>
+  <body>
     <div class="container">
-        <img src="https://iili.io/3qWRxXR.png" class="imagem-enigma" alt="Enigma">
-        <div class="pixel-clicavel" onclick="abrirJanela()"></div>
-        <p style='color: white;'>talvez aquele velho pato da cicada te ajude...</p>
+      <img
+        src="https://iili.io/3qWRxXR.png"
+        class="imagem-enigma"
+        alt="Enigma"
+      />
+      <div class="pixel-clicavel" onclick="abrirJanela()"></div>
+      <p style="color: white">Talvez aquele velho pato da cicada te ajude...</p>
+      <p style="color: white">Dead Humanity</p>
     </div>
-</body>
+  </body>
 </html>
