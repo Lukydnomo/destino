@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enigma Orb Rubra</title>
+    <style>
+      body {
+        background-color: #000;
+        color: #ccc;
+        font-family: 'Courier New', Courier, monospace;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        overflow: hidden;
+      }
+
+      .container {
+        text-align: center;
+        animation: fadein 4s ease-in;
+      }
+
+      img {
+        width: 350px;
+        height: auto;
+        filter: drop-shadow(0 0 5px #444);
+        animation: pulse 3s infinite ease-in-out;
+      }
+
+      .hint {
+        margin-top: 20px;
+        font-size: 16px;
+        opacity: 0;
+        animation: reveal 8s forwards;
+      }
+
+      @keyframes fadein {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes reveal {
+        0%,
+        60% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.03);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="hint">
+        Quando três se tornam um,<br />
+        Sob o véu da escuridão,<br />
+        Da essência rubra nasce,<br />
+        O fruto da perdição.<br /><br />
+        Mas se menos forem dados,<br />
+        Se a oferta incompleta está,<br />
+        A tinta escura reescreve,<br />
+        Novo rumo surgirá.<br /><br />
+        Pois o livro é imperfeito,<br />
+        E exige correção.<br />
+        O que falha o Destino,<br />
+        É refeito em aflição.<br /><br />
+        Da dor nasce o orbe eterno,<br />
+        Do medo vem seu poder.<br />
+        No silêncio, o inevitável,<br />
+        Rubra luz irá ascender.
+      </div>
+    </div>
+  </body>
+</html>
