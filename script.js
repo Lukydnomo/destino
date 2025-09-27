@@ -24,8 +24,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function abrirJanela() {
   let resposta = prompt('').toLowerCase();
-  if (resposta === 'null') {
-    window.location.href = 'null.html'; // Substitua pela URL correta
+  if (resposta === '661321') {
+    window.location.href = 'https://lukydnomo.github.io/meu-bem/'; // Substitua pela URL correta
+  } else if (resposta == '0') {
+    window.location.href = '0.html'; // Substitua pela URL correta
+  } else if (resposta == '27') {
+    window.location.href = 'a27.html'; // Substitua pela URL correta
+  } else if (resposta == '9') {
+    window.location.href = 'b9.html'; // Substitua pela URL correta
+  } else if (resposta == '4060') {
+    window.location.href = 'c4060.html'; // Substitua pela URL correta
+  } else if (resposta == '10') {
+    window.location.href = 'd10.html'; // Substitua pela URL correta
+  } else if (resposta == '8') {
+    window.location.href = 'e8.html'; // Substitua pela URL correta
   } else {
     alert('Errado.');
   }

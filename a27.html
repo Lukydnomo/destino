@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Primeira Mensagem - Flashback</title>
+    <style>
+      body {
+        background: #181a20;
+        font-family: "Courier New", Courier, monospace;
+        color: #e0e0e0;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .chat-container {
+        background: #23262e;
+        border-radius: 16px;
+        box-shadow: 0 4px 24px #0006;
+        padding: 32px 24px;
+        width: 340px;
+        max-width: 90vw;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        position: relative;
+      }
+      .chat-bubble {
+        background: #2c2f38;
+        border-radius: 18px 18px 18px 6px;
+        padding: 14px 18px;
+        margin-bottom: 2px;
+        max-width: 80%;
+        position: relative;
+        font-size: 1.08em;
+        line-height: 1.5;
+        word-break: break-word;
+        box-shadow: 0 2px 8px #0003;
+      }
+      .chat-bubble.initial {
+        background: #1e88e5;
+        color: #fff;
+        font-weight: bold;
+        border-left: 4px solid #ffd700;
+        position: relative;
+      }
+      .chat-bubble.initial .bubble-note {
+        position: absolute;
+        top: -22px;
+        left: 10px;
+        font-size: 0.85em;
+        color: #ffd700;
+        background: #23262e;
+        padding: 2px 8px;
+        border-radius: 8px;
+        font-style: italic;
+        letter-spacing: 0.5px;
+        box-shadow: 0 1px 4px #0002;
+      }
+      .chat-bubble.initial .bubble-emoji {
+        position: absolute;
+        right: 12px;
+        bottom: 8px;
+        font-size: 1.1em;
+        color: #ffd700;
+        opacity: 0.85;
+        pointer-events: none;
+        user-select: none;
+      }
+      .chat-bubble .stars {
+        display: inline-block;
+        margin-left: 6px;
+        vertical-align: middle;
+      }
+      .chat-bubble .stars span {
+        color: #ffd700;
+        font-size: 1em;
+        margin-right: 1px;
+      }
+      .chat-bubble .stars span.inactive {
+        color: #555;
+        opacity: 0.3;
+      }
+      .chat-date {
+        font-size: 0.85em;
+        color: #aaa;
+        margin-bottom: 6px;
+        text-align: right;
+        letter-spacing: 0.5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="chat-container">
+      <div class="chat-date">??/01/2025</div>
+      <div class="chat-bubble initial">
+        <span class="bubble-note">primeira mensagem</span>
+        <img src="image.png" alt="" />
+        <span class="bubble-emoji"></span>
+      </div>
+      <div class="chat-bubble">
+        Você lembra desse dia?<span class="stars">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span
+          ><span>★</span><span>★</span><span>★</span><span>★</span>
+        </span>
+      </div>
+      <div class="chat-bubble">
+        Nem tudo é o que parece.<br />
+        O valor está escondido na conversa.
+      </div>
+      <div class="chat-bubble">
+        Flashback: <br />
+        <em>“A primeira mensagem sempre guarda um segredo.”</em>
+      </div>
+    </div>
+  </body>
+</html>

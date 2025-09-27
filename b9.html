@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Linha do Tempo do Destino</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Arial, sans-serif;
+        background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+        min-height: 100vh;
+        overflow-x: hidden;
+      }
+      .container {
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 24px;
+        background: rgba(255, 255, 255, 0.85);
+        border-radius: 18px;
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+        position: relative;
+      }
+      h1 {
+        text-align: center;
+        font-size: 2.2em;
+        margin-bottom: 12px;
+        color: #3a4a6b;
+      }
+      .frase {
+        text-align: center;
+        font-size: 1.3em;
+        margin-bottom: 32px;
+        color: #4b5d7a;
+        font-style: italic;
+      }
+      .timeline {
+        position: relative;
+        margin: 60px 0 40px 0;
+        height: 220px;
+      }
+      .line {
+        position: absolute;
+        top: 50%;
+        left: 8%;
+        width: 84%;
+        height: 4px;
+        background: linear-gradient(90deg, #7f8fa6 0%, #273c75 100%);
+        border-radius: 2px;
+        z-index: 1;
+      }
+      .point {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 38px;
+        height: 38px;
+        background: #fff;
+        border: 3px solid #273c75;
+        border-radius: 50%;
+        z-index: 2;
+        box-shadow: 0 2px 8px rgba(39, 60, 117, 0.08);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: box-shadow 0.2s;
+      }
+      .point:hover {
+        box-shadow: 0 4px 16px rgba(39, 60, 117, 0.18);
+      }
+      .postit {
+        position: absolute;
+        top: -60px;
+        left: 50%;
+        transform: translateX(-50%) rotate(-3deg);
+        background: #ffe066;
+        color: #3a3a3a;
+        font-weight: bold;
+        font-size: 1.1em;
+        padding: 10px 18px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.2s;
+        white-space: nowrap;
+      }
+      .point:hover .postit {
+        opacity: 1;
+      }
+      .label {
+        position: absolute;
+        top: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1em;
+        color: #273c75;
+        text-align: center;
+        width: 120px;
+      }
+      /* Points positions */
+      .p1 {
+        left: 12%;
+      }
+      .p2 {
+        left: 24%;
+      }
+      .p3 {
+        left: 36%;
+      }
+      .p4 {
+        left: 60%;
+      }
+      .p5 {
+        left: 72%;
+      }
+      .p6 {
+        left: 84%;
+      }
+      /* Responsive */
+      @media (max-width: 600px) {
+        .timeline {
+          height: 180px;
+        }
+        .label {
+          width: 80px;
+          font-size: 0.95em;
+        }
+        .point {
+          width: 28px;
+          height: 28px;
+        }
+        .postit {
+          font-size: 0.95em;
+          padding: 7px 12px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Linha do Tempo do Destino</h1>
+      <div class="frase">Tudo começou em datas que se cruzaram…</div>
+      <div class="timeline">
+        <div class="line"></div>
+        <!-- Amanda: 04/04/2008 -->
+        <div class="point p1">
+          <span class="postit">4</span>
+          <span class="label">Dia<br />04</span>
+        </div>
+        <div class="point p2">
+          <span class="postit">4</span>
+          <span class="label">Mês<br />04</span>
+        </div>
+        <div class="point p3">
+          <span class="postit">2008</span>
+          <span class="label">Ano<br />2008</span>
+        </div>
+        <!-- Luky: 29/05/2010 -->
+        <div class="point p4">
+          <span class="postit">29</span>
+          <span class="label">Dia<br />29</span>
+        </div>
+        <div class="point p5">
+          <span class="postit">5</span>
+          <span class="label">Mês<br />05</span>
+        </div>
+        <div class="point p6">
+          <span class="postit">2010</span>
+          <span class="label">Ano<br />2010</span>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 32px; color: #3a4a6b">
+        <span style="font-size: 1.1em"
+          >Some todos os números dos post-its para descobrir o valor de
+          <b>C</b>!</span
+        >
+      </div>
+    </div>
+  </body>
+</html>

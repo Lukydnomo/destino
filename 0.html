@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>O Dia em Que Tudo Começou</title>
+    <style>
+      body {
+        background: #fff0f6;
+        font-family: "Segoe UI", Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .container {
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 4px 16px rgba(220, 20, 60, 0.08);
+        padding: 32px 24px;
+        margin-top: 48px;
+        max-width: 400px;
+        text-align: center;
+        position: relative;
+      }
+      .hearts {
+        position: absolute;
+        top: -32px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 2.5rem;
+        color: #ff69b4;
+        user-select: none;
+      }
+      .couple-img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #ffb6c1;
+        margin-bottom: 16px;
+        box-shadow: 0 2px 8px rgba(220, 20, 60, 0.12);
+      }
+      .diary-note {
+        font-style: italic;
+        color: #b03060;
+        margin: 18px 0 8px 0;
+        font-size: 1.08rem;
+      }
+      .calendar {
+        display: inline-block;
+        margin-top: 24px;
+        position: relative;
+        cursor: pointer;
+      }
+      .calendar-img {
+        width: 80px;
+        height: 80px;
+        display: block;
+      }
+      .calendar-day {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -40%);
+        font-size: 2.2rem;
+        font-weight: bold;
+        color: #e75480;
+        font-family: "Segoe Script", cursive;
+        text-shadow: 0 2px 8px #fff0f6;
+        pointer-events: none;
+      }
+      .calendar:hover .tooltip {
+        opacity: 1;
+        visibility: visible;
+      }
+      .tooltip {
+        position: absolute;
+        bottom: -38px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #fff0f6;
+        color: #b03060;
+        padding: 6px 14px;
+        border-radius: 8px;
+        font-size: 0.98rem;
+        box-shadow: 0 2px 8px rgba(220, 20, 60, 0.1);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.2s;
+        pointer-events: none;
+        z-index: 2;
+      }
+      .corner-note {
+        position: absolute;
+        bottom: 12px;
+        right: 18px;
+        font-size: 0.95rem;
+        color: #e75480;
+        font-family: "Segoe Script", cursive;
+        opacity: 0.7;
+        background: #fff0f6;
+        padding: 2px 8px;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="hearts">💖💐</div>
+      <!-- Substitua o src abaixo por uma foto de vocês ou uma ilustração fofa -->
+      <h2>O dia em que tudo começou</h2>
+      <div class="diary-note">
+        <span>
+          “Hoje, algo mudou. O mundo pareceu sorrir diferente.<br />
+          Guardei este dia no meu coração, como uma nota antiga de diário.<br />
+          <b>27</b> – marquei este dia para sempre.”
+        </span>
+      </div>
+      <div class="calendar" tabindex="0">
+        <!-- Calendário desenhado (SVG) -->
+        <svg class="calendar-img" viewBox="0 0 80 80">
+          <rect
+            x="8"
+            y="18"
+            width="64"
+            height="54"
+            rx="10"
+            fill="#ffe4ec"
+            stroke="#e75480"
+            stroke-width="2"
+          />
+          <rect x="8" y="18" width="64" height="16" rx="6" fill="#ffb6c1" />
+          <circle cx="22" cy="26" r="3" fill="#e75480" />
+          <circle cx="58" cy="26" r="3" fill="#e75480" />
+        </svg>
+        <span class="calendar-day">27</span>
+        <span class="tooltip">O valor de A está aqui: 27</span>
+      </div>
+      <span class="corner-note">marquei este dia para sempre</span>
+    </div>
+  </body>
+</html>

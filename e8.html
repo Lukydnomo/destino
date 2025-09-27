@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Memórias do Coração - Abril</title>
+    <style>
+      body {
+        background: linear-gradient(135deg, #f7e9e3 0%, #e3f7f3 100%);
+        font-family: "Segoe UI", sans-serif;
+        color: #5a4a42;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        max-width: 600px;
+        margin: 40px auto;
+        background: rgba(255, 255, 255, 0.85);
+        border-radius: 18px;
+        box-shadow: 0 4px 24px rgba(180, 180, 180, 0.15);
+        padding: 32px 24px;
+      }
+      h1 {
+        font-size: 2.5em;
+        color: #b97c7c;
+        margin-bottom: 0.2em;
+        font-family: "Georgia", serif;
+        letter-spacing: 2px;
+      }
+      .abril-destaque {
+        font-size: 2em;
+        color: #6bbfa3;
+        font-weight: bold;
+        letter-spacing: 4px;
+        background: linear-gradient(90deg, #f7cac9 0%, #b5ead7 100%);
+        border-radius: 8px;
+        padding: 0.2em 0.5em;
+        display: inline-block;
+        margin: 0.5em 0;
+      }
+      .frase {
+        font-size: 1.2em;
+        margin: 1.2em 0;
+        font-style: italic;
+      }
+      .enigma {
+        margin: 2em 0 1em 0;
+        font-size: 1.1em;
+        color: #7a6f6f;
+      }
+      .flores {
+        display: flex;
+        gap: 12px;
+        margin: 0.8em 0;
+        justify-content: center;
+      }
+      .flor {
+        width: 38px;
+        height: 38px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #f7cac9;
+        border-radius: 50%;
+        box-shadow: 0 2px 8px rgba(180, 180, 180, 0.12);
+        position: relative;
+      }
+      .flor svg {
+        width: 24px;
+        height: 24px;
+        display: block;
+      }
+      .letra {
+        position: absolute;
+        bottom: -18px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1em;
+        color: #6bbfa3;
+        font-weight: bold;
+        letter-spacing: 1px;
+      }
+      @media (max-width: 600px) {
+        .container {
+          padding: 16px 8px;
+        }
+        h1 {
+          font-size: 1.5em;
+        }
+        .abril-destaque {
+          font-size: 1.3em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Memórias do Coração</h1>
+      <div class="frase">“O mês que mudou tudo”</div>
+      <div class="frase">
+        “Sempre soube em <span class="abril-destaque">abril</span>”
+      </div>
+      <div class="enigma">
+        O mês que me fez perceber tudo… <br />
+        Quantas letras tem seu nome?
+      </div>
+      <div class="flores">
+        <div class="flor">
+          <svg viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="7" fill="#b5ead7" />
+            <ellipse cx="12" cy="7" rx="3" ry="5" fill="#f7cac9" />
+          </svg>
+          <span class="letra">A</span>
+        </div>
+        <div class="flor">
+          <svg viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="7" fill="#f7cac9" />
+            <ellipse cx="17" cy="12" rx="3" ry="5" fill="#b5ead7" />
+          </svg>
+          <span class="letra">B</span>
+        </div>
+        <div class="flor">
+          <svg viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="7" fill="#b5ead7" />
+            <ellipse cx="12" cy="17" rx="3" ry="5" fill="#f7cac9" />
+          </svg>
+          <span class="letra">R</span>
+        </div>
+        <div class="flor">
+          <svg viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="7" fill="#f7cac9" />
+            <ellipse cx="7" cy="12" rx="3" ry="5" fill="#b5ead7" />
+          </svg>
+          <span class="letra">I</span>
+        </div>
+        <div class="flor">
+          <svg viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="7" fill="#b5ead7" />
+            <ellipse cx="12" cy="12" rx="5" ry="3" fill="#f7cac9" />
+          </svg>
+          <span class="letra">L</span>
+        </div>
+      </div>
+      <div class="enigma">
+        Conte as flores e descubra o valor de <strong>F</strong>!
+      </div>
+    </div>
+  </body>
+</html>
