@@ -38,6 +38,14 @@ function abrirJanela() {
     window.location.href = 'd10.html'; // Substitua pela URL correta
   } else if (resposta == '8') {
     window.location.href = 'e8.html'; // Substitua pela URL correta
+  } else if (
+    resposta === 'eujanaovejomaisnada' ||
+    resposta === 'eu ja nao vejo mais nada' ||
+    resposta === 'eu já não vejo mais nada' ||
+    resposta === 'eu já não vejo mais nada' ||
+    resposta === 'Eu já não vejo mais nada'
+  ) {
+    window.location.href = 'eujanaovejomaisnada.html'; // Substitua pela URL correta
   } else {
     alert('Errado.');
   }
